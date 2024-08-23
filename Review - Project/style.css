@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.title h2 {
+  font-size: 32px;
+  margin: 14px 0;
+}
+
+.title .underline {
+  width: 100px;
+  background-color: rgb(0, 208, 255);
+  padding: 2px;
+  border-radius: 12px;
+}
+
+.review {
+  margin: 2em 1em 0;
+  max-width: 800px;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0 35px 10px #d4dfea;
+}
+
+.img-container {
+  width: 150px;
+  height: 150px;
+  background-color: rgb(209, 208, 208);
+  border-radius: 50%;
+  position: relative;
+}
+
+.img-container::before {
+  display: block;
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: rgb(0, 208, 255);
+  position: absolute;
+  z-index: -1;
+  border-radius: 50%;
+  top: -3px;
+  left: 9px;
+}
+
+.img-container::after {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background: rgb(0, 208, 255);
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: -12px;
+}
+
+#person-img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: 0 10%;
+}
+
+.quote-img {
+  width: 23px;
+  height: 23px;
+  position: absolute;
+  top: 18px;
+  left: 0;
+  z-index: 1;
+}
+
+#author {
+  margin: 1.5em 0 0.4em;
+  font-size: 24px;
+}
+
+#job {
+  font: 22px;
+  font-weight: 600;
+  color: rgb(0, 208, 255);
+}
+
+#info {
+  margin: 1.5em 0 1em;
+  text-align: center;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 26px;
+}
+
+.left-btn,
+.right-btn {
+  width: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.left-btn:hover {
+  outline: 2px dashed rgb(0, 208, 255);
+  outline-offset: 2px;
+}
+
+.right-btn:hover {
+  outline: 2px dashed rgb(0, 208, 255);
+  outline-offset: 2px;
+}
+
+.random-btn {
+  margin: 1em 0 0;
+  font-size: 14px;
+  font-weight: 600;
+  background: none;
+  color: rgb(0, 208, 255);
+  border: 2px solid rgb(0, 208, 255);
+  padding: 12px 16px;
+  border-radius: 12px;
+  outline: 2px dashed aqua;
+  outline-offset: 3px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.random-btn::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(0, 208, 255);
+  position: absolute;
+  left: 0;
+  bottom: -118%;
+  border-radius: 10px;
+  transition: all ease .5s;
+}
+
+.random-btn:hover::after {
+  bottom: 0;
+  border-radius: 0;
+  background-color: rgb(0, 208, 255);
+}
+
+.random-btn h3 {
+  position: relative;
+  z-index: 9;
+}
+
+.random-btn:hover h3 {
+  color: white;
+}
