@@ -1,0 +1,90 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+header {
+  background-color: rgb(68, 160, 247);
+}
+
+nav {
+  width: 80vw;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+.nav-items ul {
+  display: flex;
+  gap: 140px;
+}
+
+.nav-items ul li {
+  list-style: none;
+}
+
+.nav-items ul li a {
+  color: white;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 37px;
+  font-weight: 800;
+}
+
+.nav-items ul li a {
+  font-size: 23px;
+}
+
+.container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.color-info-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 12px;
+  background-color: black;
+  color: white;
+  border-radius: 28px;
+  padding: 24px;
+  margin: 0 0 24px;
+}
+
+.color-info-box h2 {
+  font-size: 33px;
+}
+
+.color-code {
+  color: rgb(68, 160, 247);
+  font-size: 23px;
+  font-weight: 600;
+  width: 300px;
+  text-align: center;
+}
+
+.btn {
+  background: black;
+  color: rgb(255, 255, 255);
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 12px;
+  padding: 12px;
+  font-size: 18px;
+  transition: .5s;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.btn:hover {
+  scale: 1.1;
+}
